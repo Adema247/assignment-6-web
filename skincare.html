@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Skincare - Adema's Beauty Shop</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">&#128132; Skincare</div>
+    <nav class="nav-links" id="mainNav">
+      <a href="index.html" class="nav-item">&#127968; Home</a>
+      <a href="catalog.html" class="nav-item">&#128194; Catalog</a>
+      <a href="brands.html" class="nav-item">&#128141; Brands</a>
+      <button id="contactBtnSkincare" class="ghost-btn">Contact Us</button>
+    </nav>
+  </header>
+
+  <main class="catalog-section">
+    <h1>Skincare Collection</h1>
+    <p class="catalog-item">Take care of your skin with our nourishing and gentle skincare line.</p>
+
+    <div class="catalog-grid">
+      <div class="product-card">
+        <img src="https://avatars.mds.yandex.net/i?id=7ed1d12f2da93d6a96230e4f8179456b_l-5235392-images-thumbs&n=13" alt="CeraVe moisturizing cream">
+        <h2>CeraVe Moisturizing Cream</h2>
+        <p>Provides hydration and restores the skin’s barrier.</p>
+        <p>Price: <s>5100₸</s> <strong>4590₸</strong></p>
+        <button class="btn">Buy</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://avatars.mds.yandex.net/i?id=fe4da087f62c59950615b1189c21792305e3faf1-12434061-images-thumbs&n=13" alt="The Ordinary serum">
+        <h2>The Ordinary Hyaluronic Acid Serum</h2>
+        <p>Hydrating serum for elasticity and glow.</p>
+        <p>Price: <s>4150₸</s> <strong>3690₸</strong></p>
+        <button class="btn">Buy</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://avatars.mds.yandex.net/i?id=5e71fc64588a91f598224c73cfd59c3c_l-13083831-images-thumbs&n=13" alt="Innisfree cleanser">
+        <h2>Innisfree Green Tea Foam Cleanser</h2>
+        <p>Gentle cleanser enriched with Jeju green tea extract.</p>
+        <p>Price: <s>3600₸</s> <strong>3120₸</strong></p>
+        <button class="btn">Buy</button>
+      </div>
+    </div>
+
+    <section style="margin-top:2rem;">
+      <h2>Skincare Spotlight</h2>
+      <div class="product-card large">
+        <div class="gallery">
+          <img id="mainImage" src="https://avatars.mds.yandex.net/i?id=7ed1d12f2da93d6a96230e4f8179456b_l-5235392-images-thumbs&n=13" alt="Featured skincare">
+          <div class="thumbnails">
+            <img class="thumb" src="https://avatars.mds.yandex.net/i?id=7ed1d12f2da93d6a96230e4f8179456b_l-5235392-images-thumbs&n=13" data-src="https://avatars.mds.yandex.net/i?id=7ed1d12f2da93d6a96230e4f8179456b_l-5235392-images-thumbs&n=13" alt="">
+            <img class="thumb" src="https://avatars.mds.yandex.net/i?id=fe4da087f62c59950615b1189c21792305e3faf1-12434061-images-thumbs&n=13" data-src="https://avatars.mds.yandex.net/i?id=fe4da087f62c59950615b1189c21792305e3faf1-12434061-images-thumbs&n=13" alt="">
+            <img class="thumb" src="https://avatars.mds.yandex.net/i?id=5e71fc64588a91f598224c73cfd59c3c_l-13083831-images-thumbs&n=13" data-src="https://avatars.mds.yandex.net/i?id=5e71fc64588a91f598224c73cfd59c3c_l-13083831-images-thumbs&n=13" alt="">
+          </div>
+        </div>
+
+        <h3>CeraVe Moisturizing Cream</h3>
+        <p class="price"><s>5100₸</s> <strong>4590₸</strong></p>
+
+        <div class="rating" aria-label="Product rating" role="radiogroup">
+          <span class="star" data-value="1" role="radio" aria-checked="false"></span>
+          <span class="star" data-value="2" role="radio" aria-checked="false"></span>
+          <span class="star" data-value="3" role="radio" aria-checked="false"></span>
+          <span class="star" data-value="4" role="radio" aria-checked="false"></span>
+          <span class="star" data-value="5" role="radio" aria-checked="false"></span>
+          <span id="ratingValue" class="small-muted">0/5</span>
+        </div>
+
+        <div class="product-actions">
+          <button id="buyBtn" class="btn">Buy</button>
+          <button id="playSoundBtn" class="btn">Play Sound</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-left">
+      <p>2025 Adema’s Beauty Shop. All rights reserved.</p>
+      <p>Developed by Adema | SE-2407 Group</p>
+    </div>
+    <div class="footer-right">
+      <div id="datetimeFooter" aria-live="polite"></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
